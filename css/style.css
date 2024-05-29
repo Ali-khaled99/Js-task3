@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #f7ecde;
+}
+
+.item{
+    font-family: "Pacifico", cursive;
+}
+.item h1{
+    position: relative;
+    font-size: 50px;
+    max-width: 20%;
+    color: #352e28;
+    margin: auto;
+}
+.item h1::before{
+    transition: all 0.3s;
+    content: "";
+    width: 100%;
+    height: 30%;
+    background-color: #fec260;
+    bottom: 5px;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+.item h1:hover::before{
+    height: 50%;
+}
+.submit-area{
+    border-top: black 2px dotted;
+}
+.inputs{
+    color: #212529;
+    font-weight: bold;
+}
+.sub-btn{
+    border-bottom: black 2px dotted;
+}
+.label1::before{
+    content: "\e0bb";
+}

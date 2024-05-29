@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/bookmark.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="mt-4 mb-4 py-5 text-center item">
+            <h1>Bookmarker</h1>
+        </div>
+
+        <div class="py-3 submit-area d-flex justify-content-center m-auto">
+            <i class="fa-solid fa-bookmark fa-xl d-flex align-items-center pe-2"></i>
+            <h2 class="">Bookmark your favorite sites</h2>
+            <i class="fa-solid fa-bookmark fa-xl d-flex align-items-center ps-2"></i>
+        </div>
+
+        <div class="inputs">
+            <div class="site-name mb-4">
+                <div>
+                    <i class="fa-solid fa-book-bookmark pe-1 py-2"></i>
+                    <label for="siteNameInput">Site Name</label>
+                </div>
+                <input class="form-control" type="text" name="" id="siteNameInput">
+                <div id="nameAlert" class="alert alert-danger d-none">
+                    <p>Enter Valid Name</p>
+                </div>    
+            </div>
+
+            <div class="site-url mb-4">
+                <div>
+                    <i class="fa-solid fa-link pe-1 py-2"></i>
+                    <label for="siteUrlInput">Site URL</label>
+                </div>
+                <input class="form-control" type="text" name="" id="siteUrlInput">
+                <div id="urlAlert" class="alert alert-danger d-none">
+                    <p>Enter Valid Url</p>
+                </div>    
+            </div>
+            <div class="sub-btn d-flex justify-content-center mt-3 pb-3">
+                <button onclick="addsite()" class="btn btn-primary px-5 py-2 m-auto">Submit</button>
+            </div>
+        </div>
+
+        <table class="table bg-light text-center mt-5">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="myData">
+
+            </tbody>
+        </table>
+
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
